@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.sony-banner {
+    width: 100%;
+    /* height: 36px; */
+    background-color: black;
+    display: flex;
+justify-content: flex-end;
+}
+
+.sony-logo {
+    width: 100px;
+    height: 36px;
+    background-image: url('/assets/sony.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.navbar{
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    /* border: 1px solid black; */
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+    
+}
+.navbar-logo>img{
+        height: 50px;
+    }
+
+.navlinks{
+    display: flex;
+    list-style: none;
+    padding: 0 20px;
+}
+.navlinks >li{
+    padding: 10px;
+    cursor: pointer; 
+    font-size: 12px;
+    
+}
+.signin-search-wrapper{
+    margin-left: auto;
+    
+} 
+.signin-search-wrapper > button{
+   background-color: royalblue;
+   color: white;
+   border: none;
+padding: 5px 10px;
+font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.hero-banner{
+    width: 100%;
+    height: 130vh;
+    background-image: url('/assets/heroImage.png');
+    background-size: cover;
+    background-position: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.hero-banner>img{
+    height: 130px;
+    margin-top: 160px;
+}
+.about-container{
+    width: 100%;
+    min-width: 100vh;
+    border-color: #121212;
+    padding: 100px 0;
+
+}
+.about-ps{
+    width: 70vw;
+    height: 70vw;
+    border: 2px solid white;
+    margin:   0 auto;
+    display: flex;
+}
+.ps-content, .video-container{
+    height: 100%;
+    width: 50%;
+    border: 2px solid white;
+
+}
+.ceo-container{
+    width: 70vw;
+    height: 70vh;
+    margin: 100px auto 0 auto;
+    border: 2px solid white;
+    position: relative;
+}
+.ceo-image{
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    position: absolute;
+    background-color: aqua;
+    top: 10%;
+    left: 12%;
+     background-image: url("/assets/ceoImage.png");
+  background-position: center;
+  background-size: cover;
+}
+    
+.ceo-content{
+height: 250px;
+width: 800px;
+border: 1px solid white;
+position: absolute;
+ background-color: black;
+top: 30%;
+left: 35%;
+color: white;
+
+}
+ceo-content ,p {position: absolute; 
+    top: 30%; 
+    left: 30%;
+     transform: translate(-30%, -30%);
+     font-size: larger;
+}
+.video-container{
+
+}
+.carousal-container{
+    background-color: black ;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid white;
+    padding: 100px 0;
+}
+.carousal-container>h5{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-size: 12.5px;
+}
+.carousal-container>h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 34px;
+}
+.swiper {
+  width: 100%;
+  height: 120vh;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  height: 450px;
+  border-radius: 20px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Side slides */
+.swiper-slide-prev,
+.swiper-slide-next {
+  opacity: 0.4;
+  transform: scale(0.85);
+}
+
+/* Active slide */
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+/* Navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+}
+.swiper-slide-content{
+    height: 15px;
+    width: 250px;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
+.swiper-slide-content> h3{
+    font-size: 22px;
+    text-align: center;
+}
+.swiper-slide-content> p{
+    font-size: 12px;
+    text-align: center;
+}
+.swiper-slide-content> button{
+    padding: 5px;
+    border-radius: 20px;
+background-color: orangered;
+color: white;
+}
