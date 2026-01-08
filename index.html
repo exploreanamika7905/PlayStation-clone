@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,21 @@
     <title>Playstation Studios | Playstation(India)</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/assets/Logo.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+crossorigin="anonymous" 
+referrerpolicy="no-referrer" />
+
+<!-- swiper js cdn -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="sony-banner">
@@ -44,34 +57,47 @@
     <article class="about-container">
         <section class="about-ps">
             <div class="ps-content">
+                <h2>PlayStation Studios</h2>
+                <p>We love storytelling, it inspires and drives everything we do. <br>
+
+This organisation has defined gaming for generations.
+ Our collective of studios and teams span the globe – and together
+  – advance gaming and the positive impact it has on people’s lives.
+
+PlayStation Studios is the fabric that binds us together, 
+with the boldness and spirit to explore, the passion to invent and reinvent,
+ and the confidence to let imagination lead the way.</p>
          </div>
-            <div class="video-container"> </div>
+             <div class="video-container">
+                <video height="100%" width="100%" controls>
+                   <source src="/assets/ps vdo.mp4" type="video/mp4"> 
+                </video> </div> 
         </section>
 
         <section class="ceo-container">
             <figure class="ceo-image"></figure>
-            <div class="ceo-content">
-                <p>"PlayStation Studios is a creator-led organisation. Our collective of studios and teams have built some of the most memorable gaming experiences imaginable. Together, we build worlds."</p>
-           
-            </div>
+            <div class="ceo-content"></div>
         </section>
+</article>
 
-    </article>
-    <article class="carousal-container"><h5>From PlayStation studios</h5>
+    <article class="carousal-container">
+        <h5>From PlayStation studios</h5>
     <h2>New releases and upcoming games</h2>
+  
+    <!-- slider main container -->
 <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <img src="/assets/heroImage.png" alt="">
-                    <div class="swiper-slide-content">
+                  <div class="swiper-slide">
+                        <img src="/assets/slide1.png" alt=""/>
+                   
+                        <div class="swiper-slide-content">
                         <h3>Astro Bot</h3>
-                        <p>Out Now </p>
+                        <p>Out now. Released September6,2024 </p>
                         <button>Buy Now</button>
                     </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="/assets/heroImage.png" alt="">
+                        <img src="/assets/slide2.png" alt="">
                         <div class="swiper-slide-content">
                         <h3>Astro Bot</h3>
                         <p>Out Now </p>
@@ -79,7 +105,7 @@
                     </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="/assets/heroImage.png" alt="">
+                        <img src="/assets/slide3.png" alt="">
                         <div class="swiper-slide-content">
                         <h3>Astro Bot</h3>
                         <p>Out Now </p>
@@ -87,7 +113,7 @@
                     </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="/assets/heroImage.png" alt="">
+                        <img src="/assets/slide4.png" alt="">
                         <div class="swiper-slide-content">
                         <h3>Astro Bot</h3>
                         <p>Out Now </p>
@@ -99,7 +125,119 @@
                 <!-- Navigation -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            </div></article>
-    
+            </div>
+        </article>
+
+    <article class="more-games-container">
+     <section class="overlay">
+        <img src="/assets/hellDriver.png " alt=" hell Driver"/>
+    <h1>Drive into Freedom</h1>
+
+<p>Fight for freedom across a hostile galaxy in this frenetic third-person co-operative team shooter.</p>
+<button>Find Out More </button>
+</section>
+</article>   
+<article class="studios-container">
+    <h1>Our Studios</h1>
+    <section class="grid1">
+        <div>
+            <img src="/assets/studioGrid1Img1.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a>
+        </div>
+        <div>
+            <img src="/assets/studioGrid1Img2.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a>
+        </div>
+        <div> <img src="/assets/studioGrid1Img3.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a></div>
+        <div> <img src="/assets/studioGrid1Img4.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a></div>
+    </section>
+
+    <section class="grid2">
+        <div>
+            <img src="/assets/studioGrid2Img1.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a>
+        </div>
+        <div> <img src="/assets/studioGrid2Img2.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a></div>
+        <div> <img src="/assets/studioGrid2Img3.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a></div>
+        <div> <img src="/assets/studioGrid2Img4.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a></div>
+        <div> <img src="/assets/studioGrid2Img5.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a></div>
+        <div> <img src="/assets/studioGrid2Img6.png" alt=""/>
+            <p>The studio behind the best-selling and award-winning UNCHARTED and The Last of Us franchises.</p>
+            <a href="#">Visit Team Asobi </a></div>
+    </section>
+    <section class="grid1">
+        <div>
+            <img src="/assets/studioGrid1Img1.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a>
+        </div>
+        <div>
+            <img src="/assets/studioGrid1Img2.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a>
+        </div>
+        <div> <img src="/assets/studioGrid1Img3.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a></div>
+        <div> <img src="/assets/studioGrid1Img2.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a></div>
+    </section>
+
+    <section class="grid2">
+        <div>
+            <img src="/assets/studioGrid1Img1.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a>
+        </div>
+        <div> <img src="/assets/studioGrid1Img2.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a></div>
+        <div> <img src="/assets/studioGrid1Img2.png" alt=""/>
+            <p>The team behind the PS5 exclusive Astro's Playroom</p>
+            <a href="#">Visit Team Asobi </a></div>
+        
+    </section>
+</article>
+
+<article class="more-games-container spiderman">
+     <section class="overlay">
+        <img src="/assets/spidermanLogo.png " alt=" hell Driver">
+    <h1>Drive into Freedom</h1>
+
+<p>Fight for freedom across a hostile galaxy in this frenetic third-person co-operative team shooter.</p>
+<button>Find Out More </button>
+<button>Explore the series</button>
+</section>
+</article> 
+
+ <!-- Swiper script CDN -->
+    <script type="module">
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>

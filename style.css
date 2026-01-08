@@ -78,23 +78,28 @@ font-weight: 600;
     margin-top: 160px;
 }
 .about-container{
-    width: 100%;
-    min-width: 100vh;
-    border-color: #121212;
+    min-width: 100%;
+    height: 100%;
+    border-color: #123;
     padding: 100px 0;
+    background-color: black;
 
 }
 .about-ps{
     width: 70vw;
     height: 70vw;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     margin:   0 auto;
     display: flex;
 }
-.ps-content, .video-container{
-    height: 100%;
-    width: 50%;
+ .ps-content, .video-container
+  { 
+    height: 50%;
+    width: 100%;
     border: 2px solid white;
+    margin: 10px;
+    padding: 20px 20px 20px 20px;
+
 
 }
 .ceo-container{
@@ -119,7 +124,7 @@ font-weight: 600;
     
 .ceo-content{
 height: 250px;
-width: 800px;
+width: 500px;
 border: 1px solid white;
 position: absolute;
  background-color: black;
@@ -128,21 +133,13 @@ left: 35%;
 color: white;
 
 }
-ceo-content ,p {position: absolute; 
-    top: 30%; 
-    left: 30%;
-     transform: translate(-30%, -30%);
-     font-size: larger;
-}
-.video-container{
 
-}
 .carousal-container{
     background-color: black ;
     color: white;
     width: 100%;
     height: 100vh;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     padding: 100px 0;
 }
 .carousal-container>h5{
@@ -160,7 +157,7 @@ ceo-content ,p {position: absolute;
 }
 .swiper {
   width: 100%;
-  height: 120vh;
+  height: auto;
   padding: 40px 0;
   margin-top: 60px;
 }
@@ -172,13 +169,19 @@ ceo-content ,p {position: absolute;
 .swiper-slide {
   height: 450px;
   border-radius: 20px;
-  background: #333;
+  /* background: #333; */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
   color: white;
   transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.swiper-slide > img {
+  height: 80%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 /* Side slides */
@@ -203,11 +206,12 @@ ceo-content ,p {position: absolute;
   width: 48px;
   height: 48px;
   border-radius: 50%;
+  padding: 10px;
 }
-
-.swiper-button-prev::after,
+ .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 18px;
+  
+font-size: 18px;
 }
 .swiper-slide-content{
     height: 15px;
@@ -227,9 +231,167 @@ ceo-content ,p {position: absolute;
     font-size: 12px;
     text-align: center;
 }
+
 .swiper-slide-content> button{
-    padding: 5px;
+    padding: 8px 15px;
     border-radius: 20px;
 background-color: orangered;
-color: white;
+color: white;font-weight: 700;
+  border: none;
 }
+
+ .more-games-container{
+    min-height: 79vh;
+    width: 100%;
+    border: 5px solid red; 
+    background-image: url("/assets/moreGamesBanner.png");
+    background-position: center;
+     background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+    border: none;
+
+}
+.overlay{
+   max-width: 500px;
+    width: 90%;
+    height: auto;
+      /* border: 5px solid red;   */
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    color: white;
+    padding-left: 20px;
+    transform: translate(-50%, -50%);
+}
+.overlay>img{
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 20px; 
+}
+.overlay>h1{
+    font-weight: lighter;
+    margin-top: 60px;
+    letter-spacing: 2px;
+}
+.overlay>p{
+    margin-top: 30px;
+    color: gray;
+    font-size: 14px;
+    line-height: 20px;
+    border: none; 
+    font-weight: 600;
+    
+}
+.overlay > button{
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    outline: 2px solid black;
+    font-weight: 800;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.overlay > button:hover{
+    background-color: gainsboro;
+    border: 2px solid black;
+    outline: 2px solid white;
+}
+
+.studios-container {
+  min-height: 100vh;
+  background-color: white;
+  width: 100%;
+  border: 5px solid black; 
+  padding: 50px;
+}
+.studios-container > h1 {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.studios-container>.grid1{
+    width: 100%;
+    margin: 100px auto 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.studios-container>.grid1>div{
+    height: 500px;
+    width: 100%;
+    background-color: #eeeeee;
+    padding: 48px;
+    display: flex;
+  flex-direction: column;
+
+}
+.studios-container>.grid1>div>img{
+    height: 210px;
+    width: 100%;
+    object-fit: contain;
+}
+.studios-container>.grid1>div>p{
+text-align: center;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+}
+.studios-container>.grid1>div>a{
+   margin-top:auto ; 
+   text-align: center;
+   text-decoration: none;
+   color: #1372c1;
+   font-weight: 500; 
+}
+.studios-container>.grid2{
+    width: 100%;
+    margin: 100px auto 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.studios-container>.grid2>div{
+    height: 600px;
+    width: 100%;
+    gap: 30px;
+    background-color: #eeeeee;
+    padding: 48px;
+    display: flex;
+  flex-direction: column;
+
+}
+.studios-container>.grid2>div>img{
+    height: 270px;
+    width: 100%;
+    object-fit: contain;
+}
+.studios-container>.grid2>div>p{
+text-align: center;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+}
+.studios-container>.grid2>div>a{
+   margin-top:auto ; 
+   text-align: center;
+   text-decoration: none;
+   color: #1372c1;
+   font-weight: 500;
+}
+.spiderman{
+    background-image:url("/assets/spiderman.png") ;
+}
+.spiderman button:last-of-type{
+    color: white;
+    background-color: rgba(220, 220, 220, 0.232);
+    border: 2px solid transparent;
+    outline:2px solid transparent ;
+    margin-left: 10px;
+}
+.spiderman button:last-of-type:hover{
+    border: 2px solid black;
+    outline: 2px solid rgba(220, 220, 220, 0.232);
+}  
